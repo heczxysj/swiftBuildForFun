@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="水果机" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Hyperspace - iPhone" translatesAutoresizingMaskIntoConstraints="NO" id="egH-R8-Txg">
+                                <rect key="frame" x="0.0" y="-20" width="414" height="936"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S4E-9u-rwz">
+                                <rect key="frame" x="0.0" y="-1" width="414" height="898"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="UZ3-11-Vrn">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="898"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fjP-Mb-XyU">
+                                <rect key="frame" x="0.0" y="144" width="414" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="SrH-eu-4G6"/>
+                                </constraints>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TZ1-qe-JcR">
+                                <rect key="frame" x="30" y="612" width="354" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.55210280783687993" blue="0.79976354049924459" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="xKA-nn-Y13"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="39"/>
+                                <state key="normal" title="ROLL">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="rollButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lXg-NH-3Lh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="fjP-Mb-XyU" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="4Kn-Mn-c6k"/>
+                            <constraint firstItem="fjP-Mb-XyU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="5bx-Ld-GYh"/>
+                            <constraint firstItem="TZ1-qe-JcR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="5hH-0M-yY3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TZ1-qe-JcR" secondAttribute="trailing" constant="30" id="9m8-dn-Fo6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="S4E-9u-rwz" secondAttribute="trailing" id="AUJ-5v-kPG"/>
+                            <constraint firstItem="egH-R8-Txg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="KTl-xy-JBl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="egH-R8-Txg" secondAttribute="trailing" id="aig-lr-E8j"/>
+                            <constraint firstAttribute="bottom" secondItem="egH-R8-Txg" secondAttribute="bottom" constant="-20" id="cQI-Gy-WOu"/>
+                            <constraint firstItem="fjP-Mb-XyU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="fbI-3N-VQT"/>
+                            <constraint firstItem="S4E-9u-rwz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hzO-p9-v7F"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="TZ1-qe-JcR" secondAttribute="bottom" constant="200" id="rg6-wt-gj5"/>
+                            <constraint firstItem="egH-R8-Txg" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="-20" id="tKW-sF-n7V"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="S4E-9u-rwz" secondAttribute="bottom" constant="-35" id="w03-tO-b6q"/>
+                            <constraint firstItem="S4E-9u-rwz" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-45" id="xc0-Je-7sB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="imagePickerView" destination="fjP-Mb-XyU" id="jvO-Fm-ypQ"/>
+                        <outlet property="rollButton" destination="TZ1-qe-JcR" id="iVz-4U-kQ6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Hyperspace - iPhone" width="1242" height="2208"/>
+    </resources>
+</document>
